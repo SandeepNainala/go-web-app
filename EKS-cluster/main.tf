@@ -105,9 +105,9 @@ resource "aws_eks_node_group" "devops_node_group" {
   subnet_ids      = aws_subnet.devops_subnet[*].id
 
   scaling_config {
-    desired_size = 3
-    max_size     = 3
-    min_size     = 3
+    desired_size = 1
+    max_size     = 1
+    min_size     = 1
   }
 
   instance_types = ["t3.large"]
